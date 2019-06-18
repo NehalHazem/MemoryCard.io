@@ -1,0 +1,163 @@
+@import 'config';
+@import 'mobile';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: color(Background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-template-areas: 'time reset';
+    padding-top: 18px;
+    width: 100%;
+
+    .countUp {
+        grid-area: time;
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        font-size: 25px;
+        font-weight: 400;
+        padding: 5px;
+
+        .time {
+            text-align: left;
+            padding-top: 3px;
+            color: color(Font-color);
+        }
+
+        .time-btns {
+            text-align: right;
+            margin-right: 25px;
+
+            button {
+                cursor: pointer;
+                border-radius: 50%;
+                border: solid color(Button-bg) 2px;
+                padding: 7px;
+                background: transparent;
+                color: color(Font-color);
+
+                &.clicked {
+                    color: color(hover-btn);
+                    border: solid color(hover-btn) 2px;
+                    // transform: scale(.97);
+                }
+
+                &:hover {
+                    color: color(hover-btn);
+                    border: solid color(hover-btn) 2px;
+                }
+            }
+        }
+    }
+
+    .startAgain {
+         grid-area: reset;
+         text-align: center;
+       
+        button {
+            font-size: 18px;
+            padding: 10px;
+            border: solid color(Button-bg) 2px;
+            border-radius: 10%;
+            font-weight: 500;
+            background: transparent;
+            margin-top: 8px;
+            color: color(Font-color);
+            cursor: pointer;
+
+            &:hover {
+                color: color(hover-btn);
+                border: solid color(hover-btn) 2px;
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 11vh;
+    padding: 0 350px;
+    // border: 1px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr);
+    grid-row-gap: 20px;
+    text-align: center;
+    perspective: 1000px;
+
+    .memory-card {
+        transform-style: preserve-3d;
+        transition: transform .2s;
+
+        img {
+            position: relative;
+            cursor: pointer;
+            width: 150px;
+            border: 1px solid #fff;
+            border-radius: 10px;
+
+            &.front-face {
+                position: absolute;
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
+            }
+        }
+
+        &:active {
+            transform: scale(.97);
+            @include easeInOut;
+        }
+
+        &.flip {
+           transform: rotateY(180deg);
+           @include easeInOut;
+        }
+    }
+}
+
+section {
+
+    div.notification {
+        position: absolute;
+        top: 8%;
+        right: 40%;
+
+        span.not {
+            display: none;
+            color: color(Notification-font);
+            font-size: 22px;
+            font-weight: 400;
+            background: color(Font-color);
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    }
+
+    div.notification2 {
+        position: absolute;
+        top: 8%;
+        right: 40%;
+        
+        span.not2 {
+            display: none;
+            color: color(Notification-font);
+            font-size: 22px;
+            font-weight: 400;
+            background: color(Font-color);
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    }
+    
+}

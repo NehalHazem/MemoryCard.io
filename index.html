@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Card Game</title>
+    <link rel="icon" href="imgs/Cards2.ico" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body class="bg">
+
+    <header>
+        <div class="page-header">
+
+            <div class="countUp">
+                <div class="time-btns">
+                    <button class="play" onclick="start()"><i class="fas fa-play"></i></button>
+                    <button class="pause" onclick="pause()"><i class="fas fa-pause"></i></button>
+                </div>
+
+                <span class="time">
+                    <span id="minutes">00</span>
+                    <span id="separator">:</span>
+                    <span id="seconds">00</span>
+                </span>
+            </div>
+
+            <div class="startAgain">
+                <button href="#" onClick="window.location.reload();">New Game</button>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="notification">
+            <span class="not">Congrats! you did it in ' 0 min and 44 sec</span>
+        </div>
+
+        <div class="notification2">
+            <span class="not2">Please Press the Start Button</span>
+        </div>
+    </section>
+
+    <main class="memory-game">
+
+        <div class="memory-card" data-name="giraffe">
+            <img class="front-face" src="imgs/Cards/card1.png" alt="giraffe">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="giraffe">
+            <img class="front-face" src="imgs/Cards/card1.png" alt="giraffe">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="lion">
+            <img class="front-face" src="imgs/Cards/card2.png" alt="lion">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="lion">
+            <img class="front-face" src="imgs/Cards/card2.png" alt="lion">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="bird">
+            <img class="front-face" src="imgs/Cards/card3.png" alt="bird">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="bird">
+            <img class="front-face" src="imgs/Cards/card3.png" alt="bird">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="dog">
+            <img class="front-face" src="imgs/Cards/card4.jpg" alt="dog">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="dog">
+            <img class="front-face" src="imgs/Cards/card4.jpg" alt="dog">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="tooth">
+            <img class="front-face" src="imgs/Cards/card5.png" alt="tooth">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="tooth">
+            <img class="front-face" src="imgs/Cards/card5.png" alt="tooth">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="bee">
+            <img class="front-face" src="imgs/Cards/card6.png" alt="bee">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+        <div class="memory-card" data-name="bee">
+            <img class="front-face" src="imgs/Cards/card6.png" alt="bee">
+            <img class="back-face" src="imgs/Cards/flip.png" alt="rotate">
+        </div>
+
+    </main>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

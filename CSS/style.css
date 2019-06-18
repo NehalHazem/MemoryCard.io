@@ -1,0 +1,384 @@
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+  main.memory-game {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[4];
+        grid-template-columns: repeat(4, 0.5fr);
+    padding: 0 180px;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+  }
+  main.memory-game .memory-card img {
+    width: 120px;
+  }
+  section div.notification {
+    position: absolute;
+    top: 11% !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section div.notification span.not {
+    display: none;
+    color: #2395b2;
+    font-size: 20px !important;
+    font-weight: 400;
+    background: #fff;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 10px;
+  }
+  section div.notification2 {
+    position: absolute;
+    top: 11% !important;
+    right: 40% !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section div.notification2 span.not2 {
+    display: none;
+    color: #2395b2;
+    font-size: 20px !important;
+    font-weight: 400;
+    background: #fff;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .countUp {
+    margin-left: 45px;
+  }
+  main.memory-game {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[4];
+        grid-template-columns: repeat(4, 0.5fr);
+    padding: 0 100px;
+    grid-gap: 15px;
+  }
+  main.memory-game .memory-card img {
+    width: 100px;
+  }
+  section div.notification {
+    position: absolute;
+    top: 11% !important;
+    right: 26% !important;
+  }
+  section div.notification span.not {
+    display: none;
+    color: #2395b2;
+    font-size: 20px !important;
+    font-weight: 400;
+    background: #fff;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 10px;
+  }
+  section div.notification2 {
+    position: absolute;
+    top: 11% !important;
+    right: 32% !important;
+  }
+  section div.notification2 span.not2 {
+    display: none;
+    color: #2395b2;
+    font-size: 20px !important;
+    font-weight: 400;
+    background: #fff;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .page-header .startAgain {
+    padding-left: 60px;
+  }
+  main.memory-game {
+    padding: 0 25px;
+    grid-gap: 5px;
+  }
+  main.memory-game .memory-card img {
+    width: 100px;
+  }
+  section div.notification {
+    position: absolute;
+    top: 11% !important;
+    right: 11% !important;
+  }
+  section div.notification span.not {
+    display: none;
+    color: #2395b2;
+    font-size: 20px !important;
+    font-weight: 400;
+    background: #fff;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 10px;
+  }
+  section div.notification2 {
+    position: absolute;
+    top: 11% !important;
+    right: 23% !important;
+  }
+  section div.notification2 span.not2 {
+    display: none;
+    color: #2395b2;
+    font-size: 20px !important;
+    font-weight: 400;
+    background: #fff;
+    text-align: center;
+    padding: 12px !important;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+  .page-header .startAgain {
+    padding-left: 0;
+    margin-top: 13px;
+  }
+  .countUp {
+    margin-left: -2px;
+  }
+  .page-header .countUp {
+    font-size: 23px !important;
+  }
+  .page-header .countUp .time-btns button {
+    font-size: 10px;
+  }
+  .page-header .countUp .time {
+    padding-top: 21px !important;
+  }
+  main.memory-game {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[3];
+        grid-template-columns: repeat(3, 0.5fr);
+    padding: 0 25px;
+    grid-gap: 5px;
+  }
+  main.memory-game .memory-card img {
+    width: 80px;
+  }
+  section div.notification2 {
+    position: absolute;
+    top: 15% !important;
+    right: 7% !important;
+  }
+  section div.notification {
+    position: absolute;
+    top: 15% !important;
+    right: 0 !important;
+  }
+  section div.notification span.not {
+    font-size: 17px !important;
+    padding: 10px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, from(#2193b0), to(#6dd5ed));
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+      grid-template-areas: 'time reset';
+  padding-top: 18px;
+  width: 100%;
+}
+
+.page-header .countUp {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: time;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[2];
+      grid-template-columns: repeat(2, 0.5fr);
+  font-size: 25px;
+  font-weight: 400;
+  padding: 5px;
+}
+
+.page-header .countUp .time {
+  text-align: left;
+  padding-top: 3px;
+  color: #fff;
+}
+
+.page-header .countUp .time-btns {
+  text-align: right;
+  margin-right: 25px;
+}
+
+.page-header .countUp .time-btns button {
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid #fff 2px;
+  padding: 7px;
+  background: transparent;
+  color: #fff;
+}
+
+.page-header .countUp .time-btns button.clicked {
+  color: #f7dfb1;
+  border: solid #f7dfb1 2px;
+}
+
+.page-header .countUp .time-btns button:hover {
+  color: #f7dfb1;
+  border: solid #f7dfb1 2px;
+}
+
+.page-header .startAgain {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: reset;
+  text-align: center;
+}
+
+.page-header .startAgain button {
+  font-size: 18px;
+  padding: 10px;
+  border: solid #fff 2px;
+  border-radius: 10%;
+  font-weight: 500;
+  background: transparent;
+  margin-top: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.page-header .startAgain button:hover {
+  color: #f7dfb1;
+  border: solid #f7dfb1 2px;
+}
+
+main {
+  margin-top: 11vh;
+  padding: 0 350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[4];
+      grid-template-columns: repeat(4, 0.5fr);
+  grid-row-gap: 20px;
+  text-align: center;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+main .memory-card {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+main .memory-card img {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+
+main .memory-card img.front-face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+main .memory-card:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+main .memory-card.flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+section div.notification {
+  position: absolute;
+  top: 8%;
+  right: 40%;
+}
+
+section div.notification span.not {
+  display: none;
+  color: #2395b2;
+  font-size: 22px;
+  font-weight: 400;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+section div.notification2 {
+  position: absolute;
+  top: 8%;
+  right: 40%;
+}
+
+section div.notification2 span.not2 {
+  display: none;
+  color: #2395b2;
+  font-size: 22px;
+  font-weight: 400;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=style.css.map */

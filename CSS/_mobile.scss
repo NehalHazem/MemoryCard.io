@@ -1,0 +1,260 @@
+// Widescreens 
+@include mediaXl {
+
+}
+
+// Desktops & Laptops
+@include mediaLg {
+    
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    main.memory-game {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        padding: 0 180px;
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+    
+
+        .memory-card {
+
+            img {
+                width: 120px;
+            }
+        }
+    }
+
+    section {
+
+        div.notification {
+            position: absolute;
+            top: 11%!important;
+            // right: 26%!important;
+            align-items: center;
+            justify-content: center;
+    
+            span.not {
+                display: none;
+                color: color(Notification-font);
+                font-size: 20px!important;
+                font-weight: 400;
+                background: color(Font-color);
+                text-align: center;
+                padding: 12px!important;
+                border-radius: 10px;
+            }
+        }
+
+        div.notification2 {
+            position: absolute;
+            top: 11%!important;
+            right: 40%!important;
+            align-items: center;
+            justify-content: center;
+    
+            span.not2 {
+                display: none;
+                color: color(Notification-font);
+                font-size: 20px!important;
+                font-weight: 400;
+                background: color(Font-color);
+                text-align: center;
+                padding: 12px!important;
+                border-radius: 10px;
+            }
+        }
+    }
+
+}
+
+// Tablets & Small Laptops
+@include mediaMd {
+
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .countUp {
+        margin-left: 45px;
+    }
+
+    main.memory-game {
+        display: grid;
+        grid-template-columns: repeat(4, 0.5fr);
+        padding: 0 100px;
+        grid-gap: 15px;
+    
+
+        .memory-card {
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    section {
+
+        div.notification {
+            position: absolute;
+            top: 11%!important;
+            right: 26%!important;
+    
+            span.not {
+                display: none;
+                color: color(Notification-font);
+                font-size: 20px!important;
+                font-weight: 400;
+                background: color(Font-color);
+                text-align: center;
+                padding: 12px!important;
+                border-radius: 10px;
+            }
+        }
+
+        div.notification2 {
+            position: absolute;
+            top: 11%!important;
+            right: 32%!important;
+    
+            span.not2 {
+                display: none;
+                color: color(Notification-font);
+                font-size: 20px!important;
+                font-weight: 400;
+                background: color(Font-color);
+                text-align: center;
+                padding: 12px!important;
+                border-radius: 10px;
+            }
+        }
+    }
+   
+}
+
+// Smartphones
+@include mediaSm {
+
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .page-header .startAgain {
+        padding-left: 60px;
+    }
+
+    main.memory-game {
+        padding: 0 25px;
+        grid-gap: 5px;
+
+        .memory-card {
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    section {
+
+        div.notification {
+            position: absolute;
+            top: 11%!important;
+            right: 11%!important;
+    
+            span.not {
+                display: none;
+                color: color(Notification-font);
+                font-size: 20px!important;
+                font-weight: 400;
+                background: color(Font-color);
+                text-align: center;
+                padding: 12px!important;
+                border-radius: 10px;
+            }
+        }
+
+        div.notification2 {
+            position: absolute;
+            top: 11%!important;
+            right: 23%!important;
+    
+            span.not2 {
+                display: none;
+                color: color(Notification-font);
+                font-size: 20px!important;
+                font-weight: 400;
+                background: color(Font-color);
+                text-align: center;
+                padding: 12px!important;
+                border-radius: 10px;
+            }
+        }
+    }
+   
+}
+
+
+@include mediaXs {
+
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .page-header .startAgain {
+        padding-left: 0;
+        margin-top: 13px;
+    }
+
+    .countUp {
+        margin-left: -2px;
+    }
+
+    .page-header .countUp {
+        font-size: 23px!important;
+    }
+
+    .page-header .countUp .time-btns button {
+        font-size: 10px;
+    }
+
+    .page-header .countUp .time {
+        padding-top: 21px!important;
+    }
+
+    main.memory-game {
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        padding: 0 25px;
+        grid-gap: 5px;
+
+        .memory-card {
+            img {
+                width: 80px;
+            }
+        }
+    }
+
+    section div.notification2 {
+        position: absolute;
+        top: 15% !important;
+        right: 7% !important;
+    }
+
+    section div.notification {
+        position: absolute;
+        top: 15% !important;
+        right: 0 !important;
+    }
+
+    section div.notification span.not {
+        font-size: 17px !important;
+        padding: 10px !important;
+    }
+}

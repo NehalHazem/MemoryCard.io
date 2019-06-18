@@ -1,0 +1,48 @@
+$colors: (
+    Background-color: linear-gradient(to right, #2193b0, #6dd5ed),
+    Notification-font: #2395b2,
+    Font-color: #fff,
+    Button-bg: #fff,
+    hover-btn: #f7dfb1,
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+@mixin easeInOut {
+    transition: all 0.5s ease-in-out;
+}
+
+
+// Mobile
+@mixin mediaXs {
+    @media screen and (max-width: 320px) {
+        @content;
+    }
+}
+
+
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
